@@ -3,14 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mening birinchi saytim</title>
+  <title>Oqibat — tanishuv va suhbat</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #263238;
+      background: #f5f7fb;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 7%;
+      background: white;
+      box-shadow: 0 2px 12px #0000000d;
+    }
+
+    .logo {
+      color: #2678e8;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin-left: 8px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .login {
+      color: #2678e8;
+      border: 1px solid #2678e8;
+    }
+
+    .signup {
+      color: white;
+      background: #2678e8;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 12px;
+      font-size: 36px;
+    }
+
+    .intro {
+      color: #64748b;
+      font-size: 18px;
+    }
+
+    .welcome {
+      margin: 32px auto;
+      padding: 22px;
+      max-width: 600px;
+      border-radius: 16px;
+      background: #e8f1ff;
+      font-size: 22px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      text-align: left;
+    }
+
+    .card {
+      padding: 20px;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px #0000000a;
+    }
+
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .card p {
+      margin: 0;
+      color: #64748b;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 16px;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      .buttons a {
+        margin-left: 4px;
+        padding: 9px;
+        font-size: 12px;
+      }
+
+      main {
+        margin-top: 35px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Salom, men Mavlonovman!</h1>
-  <p>Bu mening internetdagi birinchi saytim.</p>
-  <button onclick="document.getElementById('xabar').textContent='Tugma ishladi!'">
-    Bosing
-  </button>
-  <p id="xabar"></p>
+  <header>
+    <div class="logo">OQIBAT</div>
+    <nav class="buttons">
+      <a class="login" href="#kirish">Kirish</a>
+      <a class="signup" href="#royxatdan-otish">Ro‘yxatdan o‘tish</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Odamlar bilan tanishing va suhbatlashing</h1>
+    <p class="intro">Yangi do‘stlar toping, suhbat quring va kuningizni qiziqarli o‘tkazing.</p>
+
+    <div class="welcome">👋 Salom! Qalaysiz?</div>
+
+    <section class="features">
+      <div class="card">
+        <h2>💬 Umumiy chat</h2>
+        <p>Hamma bilan birdan suhbatlashing.</p>
+      </div>
+      <div class="card">
+        <h2>✉️ Shaxsiy xabarlar</h2>
+        <p>Birga-bir yozishma olib boring.</p>
+      </div>
+      <div class="card">
+        <h2>📞 Qo‘ng‘iroqlar</h2>
+        <p>Do‘stlaringiz bilan bog‘laning.</p>
+      </div>
+      <div class="card">
+        <h2>✨ Hikoyalar</h2>
+        <p>Kun lahzalaringizni ulashing.</p>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
+
