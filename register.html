@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="OQIBAT.BIZ saytida ro‘yxatdan o‘ting.">
+  <title>Ro‘yxatdan o‘tish — OQIBAT.BIZ</title>
 
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="index.html">OQIBAT</a>
+
+    <nav class="buttons">
+      <a class="login" href="index.html#kirish">Kirish</a>
+    </nav>
+  </header>
+
+  <main class="register-card">
+    <h1>Ro‘yxatdan o‘tish</h1>
+    <p class="register-intro">Hisob yaratish uchun ma’lumotlaringizni kiriting.</p>
+
+    <form id="register-form">
+      <label for="name">Ism</label>
+      <input
+        id="name"
+        name="name"
+        type="text"
+        autocomplete="name"
+        required
+      >
+
+      <label for="username">Login</label>
+      <input
+        id="username"
+        name="username"
+        type="text"
+        minlength="3"
+        maxlength="30"
+        pattern="[A-Za-z0-9._]{3,30}"
+        autocomplete="username"
+        required
+      >
+      <small>Lotin harflari, raqam, nuqta yoki pastki chiziq; kamida 3 belgi.</small>
+
+      <label for="birthdate">Tug‘ilgan sana</label>
+      <input
+        id="birthdate"
+        name="birthdate"
+        type="date"
+        autocomplete="bday"
+        required
+      >
+
+      <label for="gender">Jins</label>
+      <select id="gender" name="gender" required>
+        <option value="">Tanlang</option>
+        <option value="erkak">Erkak</option>
+        <option value="ayol">Ayol</option>
+      </select>
+
+      <label for="password">Parol</label>
+      <input
+        id="password"
+        name="password"
+        type="password"
+        minlength="8"
+        autocomplete="new-password"
+        required
+      >
+      <small>Parol kamida 8 ta belgidan iborat bo‘lsin.</small>
+
+      <button type="submit">Ro‘yxatdan o‘tish</button>
+      <p id="register-message" role="status" aria-live="polite"></p>
+    </form>
+
+    <p class="login-link">
+      Hisobingiz bormi?
+      <a href="index.html#kirish">Kirish</a>
+    </p>
+  </main>
+</body>
+</html>
