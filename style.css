@@ -113,3 +113,84 @@ body {
   }
 }
 
+/* Ro‘yxatdan o‘tish sahifasi */
+body:has(.register-card) {
+  min-height: 100vh;
+  padding: 24px 14px;
+  background: linear-gradient(145deg, #e9f5ff, #f6f9ff);
+}
+
+body:has(.register-card) header {
+  max-width: 440px;
+  margin: 0 auto 18px;
+  padding: 12px 16px;
+  border-radius: 16px;
+}
+
+body:has(.register-card) .register-card {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 24px 18px;
+  border: 1px solid #e8eef7;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 10px 30px #2379bc12;
+  text-align: left;
+}
+
+.register-card h1 {
+  margin: 0 0 6px;
+  text-align: center;
+  font-size: 21px;
+}
+
+.register-intro {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+#register-form {
+  gap: 7px;
+}
+
+#register-form label {
+  margin-top: 5px;
+  color: #174b88;
+  font-size: 12px;
+}
+
+#register-form input,
+#register-form select {
+  min-height: 42px;
+  border-color: #d7e2f0;
+  border-radius: 11px;
+  font-size: 13px;
+}
+
+#register-form button {
+  min-height: 44px;
+  margin-top: 10px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.register-card .login-link {
+  margin-top: 16px;
+}
+
+@media (max-width: 480px) {
+  body:has(.register-card) {
+    padding: 12px 8px;
+  }
+
+  body:has(.register-card) header {
+    margin-bottom: 12px;
+    padding: 10px 14px;
+  }
+
+  body:has(.register-card) .register-card {
+    padding: 20px 14px;
+  }
+}
